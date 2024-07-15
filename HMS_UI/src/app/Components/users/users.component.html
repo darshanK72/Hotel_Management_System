@@ -1,0 +1,99 @@
+<div class="container mt-4">
+    <!-- Form Section -->
+    <div class="card mb-4" *ngIf="showForm">
+        <div class="card-header">
+            <h4>{{ submitType }} User</h4>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="userForm" (ngSubmit)="onSave()">
+                <div class="form-group row my-2">
+                    <label for="username" class="col-2 col-form-label">Username</label>
+                    <div class="col-10">
+                        <input type="text" id="username" formControlName="username" class="form-control" />
+                        <div *ngIf="userForm.get('username')!.invalid && userForm.get('username')!.touched"
+                            class="text-danger">
+                            Username is required and should be a maximum of 50 characters.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="password" class="col-2 col-form-label">Password</label>
+                    <div class="col-10">
+                        <input type="password" id="password" formControlName="password" class="form-control" />
+                        <div *ngIf="userForm.get('password')!.invalid && userForm.get('password')!.touched"
+                            class="text-danger">
+                            Password is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="email" class="col-2 col-form-label">Email</label>
+                    <div class="col-10">
+                        <input type="email" id="email" formControlName="email" class="form-control" />
+                        <div *ngIf="userForm.get('email')!.invalid && userForm.get('email')!.touched"
+                            class="text-danger">
+                            Email is required and should be a valid email address.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="roleId" class="col-2 col-form-label">Role ID</label>
+                    <div class="col-10">
+                        <input type="number" id="roleId" formControlName="roleId" class="form-control" />
+                        <div *ngIf="userForm.get('roleId')!.invalid && userForm.get('roleId')!.touched"
+                            class="text-danger">
+                            Role ID is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="departmentId" class="col-2 col-form-label">Department ID</label>
+                    <div class="col-10">
+                        <input type="number" id="departmentId" formControlName="departmentId" class="form-control" />
+                        <div *ngIf="userForm.get('departmentId')!.invalid && userForm.get('departmentId')!.touched"
+                            class="text-danger">
+                            Department ID is required.
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success me-2" [disabled]="userForm.invalid">{{ submitType
+                    }}</button>
+                <button type="button" class="btn btn-secondary me-2" (click)="onCancel()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- List View Section -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <button class="btn btn-primary" (click)="onNew()">New User</button>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role ID</th>
+                        <th>Department ID</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users; let i = index">
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.roleId }}</td>
+                        <td>{{ user.departmentId }}</td>
+                        <td>
+                            <button class="btn btn-info me-2" (click)="onEdit(user)">Edit</button>
+                            <button class="btn btn-danger me-2" (click)="onDelete(user.userId)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

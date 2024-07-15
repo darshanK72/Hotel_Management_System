@@ -1,0 +1,156 @@
+<div class="container mt-4">
+    <!-- Form Section -->
+    <div class="card mb-4" *ngIf="showForm">
+        <div class="card-header">
+            <h4>{{ submitType }} Guest</h4>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="guestForm" (ngSubmit)="onSave()">
+                <div class="form-group row my-2">
+                    <label for="name" class="col-2 col-form-label">Name</label>
+                    <div class="col-10">
+                        <input type="text" id="name" formControlName="name" class="form-control" />
+                        <div *ngIf="guestForm.get('name')!.invalid && guestForm.get('name')!.touched"
+                            class="text-danger">
+                            Name is required and should be a maximum of 100 characters.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="email" class="col-2 col-form-label">Email</label>
+                    <div class="col-10">
+                        <input type="email" id="email" formControlName="email" class="form-control" />
+                        <div *ngIf="guestForm.get('email')!.invalid && guestForm.get('email')!.touched"
+                            class="text-danger">
+                            Email is required and should be a valid email address.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="gender" class="col-2 col-form-label">Gender</label>
+                    <div class="col-10">
+                        <input type="text" id="gender" formControlName="gender" class="form-control" />
+                        <div *ngIf="guestForm.get('gender')!.invalid && guestForm.get('gender')!.touched"
+                            class="text-danger">
+                            Gender is required and should be a maximum of 10 characters.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="address" class="col-2 col-form-label">Address</label>
+                    <div class="col-10">
+                        <input type="text" id="address" formControlName="address" class="form-control" />
+                        <div *ngIf="guestForm.get('address')!.invalid && guestForm.get('address')!.touched"
+                            class="text-danger">
+                            Address is required and should be a maximum of 200 characters.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="phoneNumber" class="col-2 col-form-label">Phone Number</label>
+                    <div class="col-10">
+                        <input type="text" id="phoneNumber" formControlName="phoneNumber" class="form-control" />
+                        <div *ngIf="guestForm.get('phoneNumber')!.invalid && guestForm.get('phoneNumber')!.touched"
+                            class="text-danger">
+                            Phone Number is required and should be a valid phone number (up to 10 digits).
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="memberCode" class="col-2 col-form-label">Member Code</label>
+                    <div class="col-10">
+                        <input type="text" id="memberCode" formControlName="memberCode" class="form-control" />
+                        <div *ngIf="guestForm.get('memberCode')!.invalid && guestForm.get('memberCode')!.touched"
+                            class="text-danger">
+                            Member Code should be a maximum of 50 characters.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label for="reservationId" class="col-2 col-form-label">Reservation ID</label>
+                    <div class="col-10">
+                        <input type="number" id="reservationId" formControlName="reservationId" class="form-control" />
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success me-2" [disabled]="guestForm.invalid">{{ submitType
+                    }}</button>
+                <button type="button" class="btn btn-secondary me-2" (click)="onCancel()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Filter Form Section -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4>Filter Guests</h4>
+        </div>
+        <div class="card-body">
+            <form (ngSubmit)="applyFilters()" #filterForm="ngForm" class="row g-3">
+                <div class="col-md-3">
+                  <label for="nameFilter" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameFilter" name="name" placeholder="Name"
+                         [(ngModel)]="filterParams.name">
+                </div>
+                <div class="col-md-3">
+                  <label for="emailFilter" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="emailFilter" name="email" placeholder="Email"
+                         [(ngModel)]="filterParams.email">
+                </div>
+                <div class="col-md-3">
+                  <label for="phoneFilter" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="phoneFilter" name="phoneNumber" placeholder="Phone Number"
+                         [(ngModel)]="filterParams.phoneNumber">
+                </div>
+                <div class="col-md-3">
+                  <label for="memberCodeFilter" class="form-label">Member Code</label>
+                  <input type="text" class="form-control" id="memberCodeFilter" name="memberCode" placeholder="Member Code"
+                         [(ngModel)]="filterParams.memberCode">
+                </div>
+                <div class="col-md-12 text-end">
+                  <button type="submit" class="btn btn-primary">Apply Filters</button>
+                  <button type="button" class="btn btn-secondary ms-2" (click)="resetFilters()">Reset</button>
+                </div>
+              </form>
+        </div>
+    </div>
+
+    <!-- List View Section -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <button class="btn btn-primary" (click)="onNew()">New Guest</button>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                        <th>Member Code</th>
+                        <th>Reservation ID</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let guest of guests; let i = index">
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ guest.name }}</td>
+                        <td>{{ guest.email }}</td>
+                        <td>{{ guest.gender }}</td>
+                        <td>{{ guest.address }}</td>
+                        <td>{{ guest.phoneNumber }}</td>
+                        <td>{{ guest.memberCode }}</td>
+                        <td>{{ guest.reservationId }}</td>
+                        <td>
+                            <button class="btn btn-info me-2" (click)="onEdit(guest)">Edit</button>
+                            <button class="btn btn-danger me-2" (click)="onDelete(guest.guestId)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

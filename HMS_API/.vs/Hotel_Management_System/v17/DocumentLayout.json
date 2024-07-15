@@ -1,0 +1,669 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\controllers\\receptionistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:controllers\\receptionistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\repository\\implementation\\receptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:repository\\implementation\\receptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\payloads\\guestpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:payloads\\guestpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\payloads\\reservationpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:payloads\\reservationpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\hmsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\hmsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\controllers\\ownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:controllers\\ownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\repository\\implementation\\commonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:repository\\implementation\\commonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\hotel_management_system.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:hotel_management_system.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\repository\\interfaces\\icommonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:repository\\interfaces\\icommonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\repository\\implementation\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:repository\\implementation\\ownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\repository\\interfaces\\imanagerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:repository\\interfaces\\imanagerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\repository\\interfaces\\iownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:repository\\interfaces\\iownerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\repository\\interfaces\\ireceptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:repository\\interfaces\\ireceptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\payloads\\paymentpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:payloads\\paymentpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\repository\\implementation\\managerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:repository\\implementation\\managerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\payloads\\reservationresponsepayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:payloads\\reservationresponsepayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\rate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\rate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\models\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:models\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\hotel_management_system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:hotel_management_system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\payloads\\userpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:payloads\\userpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\payloads\\staffpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:payloads\\staffpayload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\migrations\\20240624135257_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:migrations\\20240624135257_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\migrations\\20240702045634_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:migrations\\20240702045634_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|c:\\users\\kkashive\\desktop\\hotel_management_system_jwt\\hotelmanagementsystem_withjwt_final\\migrations\\20240701112956_noasic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9655E3B8-D41C-40A4-8DAA-806B600EC80D}|Hotel_Management_System.csproj|solutionrelative:migrations\\20240701112956_noasic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAUwDkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T04:59:15.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReceptionistController.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Controllers\\ReceptionistController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReceptionistController.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Controllers\\ReceptionistController.cs",
+              "RelativeToolTip": "Controllers\\ReceptionistController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAD0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReceptionistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Implementation\\ReceptionistRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Implementation\\ReceptionistRepository.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Implementation\\ReceptionistRepository.cs",
+              "RelativeToolTip": "Repository\\Implementation\\ReceptionistRepository.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Guest.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Guest.cs",
+              "RelativeDocumentMoniker": "Models\\Guest.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Guest.cs",
+              "RelativeToolTip": "Models\\Guest.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwB4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GuestPayload.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\GuestPayload.cs",
+              "RelativeDocumentMoniker": "Payloads\\GuestPayload.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\GuestPayload.cs",
+              "RelativeToolTip": "Payloads\\GuestPayload.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAcwBUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-24T09:16:10.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ManagerController.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "Controllers\\ManagerController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA7wA0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReservationPayload.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\ReservationPayload.cs",
+              "RelativeDocumentMoniker": "Payloads\\ReservationPayload.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\ReservationPayload.cs",
+              "RelativeToolTip": "Payloads\\ReservationPayload.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T13:43:34.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HMSDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\HMSDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\HMSDbContext.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\HMSDbContext.cs",
+              "RelativeToolTip": "Models\\HMSDbContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAiwBkAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OwnerController.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Controllers\\OwnerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OwnerController.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Controllers\\OwnerController.cs",
+              "RelativeToolTip": "Controllers\\OwnerController.cs",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAiwKYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAwwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CommonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Implementation\\CommonRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Implementation\\CommonRepository.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Implementation\\CommonRepository.cs",
+              "RelativeToolTip": "Repository\\Implementation\\CommonRepository.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Hotel_Management_System",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Hotel_Management_System.csproj",
+              "RelativeDocumentMoniker": "Hotel_Management_System.csproj",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Hotel_Management_System.csproj",
+              "RelativeToolTip": "Hotel_Management_System.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-02T05:14:25.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20240702045634_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Migrations\\20240702045634_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240702045634_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Migrations\\20240702045634_InitialMigration.cs",
+              "RelativeToolTip": "Migrations\\20240702045634_InitialMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T04:56:34.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20240701112956_noasic.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Migrations\\20240701112956_noasic.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240701112956_noasic.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Migrations\\20240701112956_noasic.cs",
+              "RelativeToolTip": "Migrations\\20240701112956_noasic.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T11:29:56.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ICommonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Interfaces\\ICommonRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interfaces\\ICommonRepository.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Interfaces\\ICommonRepository.cs",
+              "RelativeToolTip": "Repository\\Interfaces\\ICommonRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OwnerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Implementation\\OwnerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Implementation\\OwnerRepository.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Implementation\\OwnerRepository.cs",
+              "RelativeToolTip": "Repository\\Implementation\\OwnerRepository.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAqwNEAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IManagerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Interfaces\\IManagerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interfaces\\IManagerRepository.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Interfaces\\IManagerRepository.cs",
+              "RelativeToolTip": "Repository\\Interfaces\\IManagerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IOwnerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Interfaces\\IOwnerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interfaces\\IOwnerRepository.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Interfaces\\IOwnerRepository.cs",
+              "RelativeToolTip": "Repository\\Interfaces\\IOwnerRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA+wBQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IReceptionistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Interfaces\\IReceptionistRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interfaces\\IReceptionistRepository.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Interfaces\\IReceptionistRepository.cs",
+              "RelativeToolTip": "Repository\\Interfaces\\IReceptionistRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PaymentPayload.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\PaymentPayload.cs",
+              "RelativeDocumentMoniker": "Payloads\\PaymentPayload.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\PaymentPayload.cs",
+              "RelativeToolTip": "Payloads\\PaymentPayload.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Bill.cs",
+              "RelativeDocumentMoniker": "Models\\Bill.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Bill.cs",
+              "RelativeToolTip": "Models\\Bill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Reservation.cs",
+              "RelativeDocumentMoniker": "Models\\Reservation.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Reservation.cs",
+              "RelativeToolTip": "Models\\Reservation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwDAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Models\\Room.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Room.cs",
+              "RelativeToolTip": "Models\\Room.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ManagerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Implementation\\ManagerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Implementation\\ManagerRepository.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Repository\\Implementation\\ManagerRepository.cs",
+              "RelativeToolTip": "Repository\\Implementation\\ManagerRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAgwG8AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T11:11:58.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ReservationResponsePayload.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\ReservationResponsePayload.cs",
+              "RelativeDocumentMoniker": "Payloads\\ReservationResponsePayload.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\ReservationResponsePayload.cs",
+              "RelativeToolTip": "Payloads\\ReservationResponsePayload.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "Models\\Report.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Report.cs",
+              "RelativeToolTip": "Models\\Report.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAawBAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T14:21:56.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Rate.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Rate.cs",
+              "RelativeDocumentMoniker": "Models\\Rate.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Rate.cs",
+              "RelativeToolTip": "Models\\Rate.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Staff.cs",
+              "RelativeDocumentMoniker": "Models\\Staff.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\Staff.cs",
+              "RelativeToolTip": "Models\\Staff.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T13:44:10.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RoomType.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\RoomType.cs",
+              "RelativeDocumentMoniker": "Models\\RoomType.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Models\\RoomType.cs",
+              "RelativeToolTip": "Models\\RoomType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20240624135257_init.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Migrations\\20240624135257_init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240624135257_init.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Migrations\\20240624135257_init.cs",
+              "RelativeToolTip": "Migrations\\20240624135257_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T13:52:57.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Hotel_Management_System.csproj",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Hotel_Management_System.csproj",
+              "RelativeDocumentMoniker": "Hotel_Management_System.csproj",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Hotel_Management_System.csproj",
+              "RelativeToolTip": "Hotel_Management_System.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-24T12:47:14.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserPayload.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\UserPayload.cs",
+              "RelativeDocumentMoniker": "Payloads\\UserPayload.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\UserPayload.cs",
+              "RelativeToolTip": "Payloads\\UserPayload.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAYwBIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "StaffPayload.cs",
+              "DocumentMoniker": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\StaffPayload.cs",
+              "RelativeDocumentMoniker": "Payloads\\StaffPayload.cs",
+              "ToolTip": "C:\\Users\\kkashive\\Desktop\\Hotel_Management_System_JWT\\HotelManagementSystem_WithJWT_Final\\Payloads\\StaffPayload.cs",
+              "RelativeToolTip": "Payloads\\StaffPayload.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:16:10.779Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

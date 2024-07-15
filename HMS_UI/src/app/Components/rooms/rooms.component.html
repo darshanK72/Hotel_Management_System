@@ -1,0 +1,89 @@
+<div class="container mt-4">
+  <!-- Form Section -->
+  <div class="card mb-4" *ngIf="showForm">
+    <div class="card-header">
+      <h4>{{ submitType }} Room</h4>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="roomForm" (ngSubmit)="onSave()">
+        <div class="form-group row my-2">
+          <label for="roomNumber" class="col-2 col-form-label">Room Number</label>
+          <div class="col-10">
+            <input type="text" id="roomNumber" formControlName="roomNumber" class="form-control" />
+            <div *ngIf="roomForm.get('roomNumber')!.invalid && roomForm.get('roomNumber')!.touched" class="text-danger">
+              Room Number is required and should be a maximum of 10 characters.
+            </div>
+          </div>
+        </div>
+        <div class="form-group row my-2">
+          <label for="status" class="col-2 col-form-label">Status</label>
+          <div class="col-10">
+            <select id="roomType" formControlName="status" class="form-control">
+              <option [value]="status.value" *ngFor="let status of roomStatus">{{ status.label }}</option>
+            </select>
+            <div *ngIf="roomForm.get('status')!.invalid && roomForm.get('status')!.touched" class="text-danger">
+              Room Status is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group row my-2">
+          <label for="perNightCharges" class="col-2 col-form-label">Per Night Charges</label>
+          <div class="col-10">
+            <input type="number" id="perNightCharges" formControlName="perNightCharges" class="form-control" />
+            <div *ngIf="roomForm.get('perNightCharges')!.invalid && roomForm.get('perNightCharges')!.touched"
+              class="text-danger">
+              Per Night Charges are required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group row my-2">
+          <label for="roomType" class="col-2 col-form-label">Room Type</label>
+          <div class="col-10">
+            <select id="roomType" formControlName="roomType" class="form-control">
+              <option [value]="type.value" *ngFor="let type of roomTypes">{{ type.label }}</option>
+            </select>
+            <div *ngIf="roomForm.get('roomType')!.invalid && roomForm.get('roomType')!.touched" class="text-danger">
+              Room Type is required.
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success me-2" [disabled]="roomForm.invalid">{{ submitType }}</button>
+        <button type="button" class="btn btn-secondary me-2" (click)="onCancel()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- List View Section -->
+  <div class="card mb-4">
+    <div class="card-header">
+      <button class="btn btn-primary" (click)="onNew()">New Room</button>
+    </div>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Room Number</th>
+            <th>Status</th>
+            <th>Per Night Charges</th>
+            <th>Room Type</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let room of rooms; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ room.roomNumber }}</td>
+            <td>{{ room.status }}</td>
+            <td>{{ room.perNightCharges | currency }}</td>
+            <td>{{ getRoomTypeLabel(room.roomType) }}</td>
+            <td>
+              <button class="btn btn-info me-2" (click)="onEdit(room)">Edit</button>
+              <button class="btn btn-danger me-2" (click)="onDelete(room.roomId)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="col-md-12 row">
+        <div class="col-6" *ngIf="ownerRole">
+            <div class="card my-3">
+                <div class="card-header">
+                    <b>Users CRUD</b>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Perform Create,Read,Update,Delete Operations on Users</p>
+                    <a routerLink="/users" class="btn btn-primary">Click</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6" *ngIf="ownerRole">
+            <div class="card my-3">
+                <div class="card-header">
+                    <b>Departments CRUD</b>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Perform Create,Read,Update,Delete Operations on Departments</p>
+                    <a routerLink="/departments" class="btn btn-primary">Click</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6" *ngIf="managerRole">
+            <div class="card my-3">
+                <div class="card-header">
+                    <b>Rooms CRUD</b>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Perform Create,Read,Update,Delete Operations on Rooms</p>
+                    <a routerLink="/rooms" class="btn btn-primary">Click</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6" *ngIf="managerRole">
+            <div class="card my-3">
+                <div class="card-header">
+                    <b>Staffs CRUD</b>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Perform Create,Read,Update,Delete Operations on Staffs</p>
+                    <a routerLink="/staffs" class="btn btn-primary">Click</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6" *ngIf="receptionRole">
+            <div class="card my-3">
+                <div class="card-header">
+                    <b>Guests CRUD</b>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Perform Create,Read,Update,Delete Operations on Guests</p>
+                    <a routerLink="/guests" class="btn btn-primary">Click</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6" *ngIf="receptionRole">
+            <div class="card my-3">
+                <div class="card-header">
+                    <b>Reservations CRUD</b>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Perform Create,Read,Update,Delete Operations on Reservations</p>
+                    <a routerLink="/reservations" class="btn btn-primary">Click</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
