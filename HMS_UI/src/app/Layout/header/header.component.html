@@ -16,9 +16,9 @@
               <li class="nav-item" *ngIf="!(isLoggedIn$ | async) as isLoggedIn">
                 <a class="nav-link" routerLink="/login" [routerLinkActive]="'active'">Login</a>
               </li>
-              <li class="nav-item" *ngIf="!(isLoggedIn$ | async) as isLoggedIn">
+              <!-- <li class="nav-item" *ngIf="!(isLoggedIn$ | async) as isLoggedIn">
                 <a class="nav-link" routerLink="/register" [routerLinkActive]="'active'">Register</a>
-              </li>
+              </li> -->
             </ul>
             
             <!-- <form class="d-flex"  *ngIf="(isLoggedIn$ | async) as isLoggedIn">

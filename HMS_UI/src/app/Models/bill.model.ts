@@ -5,5 +5,8 @@ export interface Bill {
     price: number;
     taxes: number;
     services: string;
+    guestId:number,
+    reservationId:number,
+    status:string;
   }
   

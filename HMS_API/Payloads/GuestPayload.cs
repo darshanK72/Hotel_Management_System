@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using HMS_API.Models;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HMS_API.Payload
@@ -30,5 +31,7 @@ namespace HMS_API.Payload
 
         [MaxLength(50)]
         public string? MemberCode { get; set; }
+
+        public int? ReservationId { get; set; }
     }
 }

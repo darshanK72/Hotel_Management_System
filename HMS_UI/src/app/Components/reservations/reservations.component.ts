@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Guest } from 'src/app/Models/guest.model';
 import { Reservation } from 'src/app/Models/reservation.model';
 import { Room } from 'src/app/Models/room.model';
 import { ReceptionistService } from 'src/app/Services/reception.service';
@@ -13,6 +14,7 @@ export class ReservationsComponent implements OnInit {
   reservations: Reservation[] = [];
   reservationForm: FormGroup;
   rooms: Room[] = [];
+  guests:Guest[] = [];
   submitType = 'Add';
   showForm = false;
 
@@ -24,21 +26,23 @@ export class ReservationsComponent implements OnInit {
       reservationId: [0],
       numberOfAdults: [0, Validators.required],
       numberOfChildren: [0, Validators.required],
-      day: ['', Validators.required],
       checkInDate: ['', Validators.required],
       checkOutDate: ['', Validators.required],
-      numberOfNights: [0, Validators.required],
-      status: ['', Validators.required],
-      roomId: [null], // Example: Add related fields as needed
+      day:[''],
+      status:[''],
+      roomId: [null],
+      guestId: [null],
       rateId: [null],
       paymentId: [null],
-      billId: [null]
+      billId: [null],
+      numberofNights:[0]
     });
   }
 
   ngOnInit(): void {
     this.loadReservations();
     this.loadRooms();
+    this.loadGuests();
   }
 
   loadReservations(): void {
@@ -56,25 +60,31 @@ export class ReservationsComponent implements OnInit {
   onSave(): void {
     console.log(this.reservationForm.value);
     if (this.reservationForm.valid) {
+
+      const checkInDate = this.reservationForm.get('checkInDate')?.value;
+      const checkOutDate = this.reservationForm.get('checkOutDate')?.value;
+
       const reservation: Reservation = {
         reservationId: this.reservationForm.get('reservationId')?.value,
         numberOfAdults: this.reservationForm.get('numberOfAdults')?.value,
         numberOfChildren: this.reservationForm.get('numberOfChildren')?.value,
-        day: this.reservationForm.get('day')?.value,
-        checkInDate: new Date(this.reservationForm.get('checkInDate')?.value),
-        checkOutDate: new Date(this.reservationForm.get('checkOutDate')?.value),
-        numberOfNights: this.reservationForm.get('numberOfNights')?.value,
-        status: this.reservationForm.get('status')?.value,
+        checkInDate: checkInDate ? new Date(checkInDate).toISOString() : null,
+        checkOutDate: checkOutDate ? new Date(checkOutDate).toISOString() : null,
         roomId: this.reservationForm.get('roomId')?.value,
+        guestId: this.reservationForm.get('guestId')?.value,
         rateId: this.reservationForm.get('rateId')?.value,
         paymentId: this.reservationForm.get('paymentId')?.value,
-        billId: this.reservationForm.get('billId')?.value
+        billId: this.reservationForm.get('billId')?.value,
+        day: this.reservationForm.get('day')?.value,
+        status: this.reservationForm.get('status')?.value,
+        numberOfNights : this.reservationForm.get('numberOfNights')?.value
       };
 
       if (this.submitType === 'Add') {
         this.receptionService.createReservation(reservation).subscribe(
           (createdReservation: Reservation) => {
-            this.reservations.push(createdReservation);
+            // this.reservations.push(createdReservation);
+            this.loadReservations();
             this.onCancel();
           },
           (error) => {
@@ -83,11 +93,13 @@ export class ReservationsComponent implements OnInit {
         );
       } else {
         const reservationId = reservation.reservationId;
+        console.log(reservation);
         this.receptionService.updateReservation(reservationId, reservation).subscribe(
           () => {
             const index = this.reservations.findIndex((r) => r.reservationId === reservationId);
             if (index !== -1) {
-              this.reservations[index] = reservation;
+              // this.reservations[index] = reservation;
+              this.loadReservations();
               this.onCancel();
             }
           },
@@ -131,6 +143,20 @@ export class ReservationsComponent implements OnInit {
     this.receptionService.getRooms().subscribe(
       (rooms: Room[]) => {
         this.rooms = rooms;
+        console.log(this.rooms);
+      },
+      (error) => {
+        console.log(error);
+        window.alert('Error loading rooms: ' + error.message);
+      }
+    );
+  }
+
+  loadGuests(): void {
+    this.receptionService.searchGuests().subscribe(
+      (guests: Guest[]) => {
+        this.guests = guests;
+        console.log(this.guests);
       },
       (error) => {
         console.log(error);

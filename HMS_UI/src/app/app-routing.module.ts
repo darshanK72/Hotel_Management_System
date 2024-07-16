@@ -12,6 +12,7 @@ import { StaffsComponent } from './Components/staffs/staffs.component';
 import { UsersComponent } from './Components/users/users.component';
 import { GuestsComponent } from './Components/guests/guests.component';
 import { ReservationsComponent } from './Components/reservations/reservations.component';
+import { BillComponent } from './Components/bill/bill.component';
 
 const routes: Routes = [
   {
@@ -62,6 +63,11 @@ const routes: Routes = [
   {
     path:'reservations',
     component:ReservationsComponent,
+    canActivate:[afterLoginGuard]
+  },
+  {
+    path:'bills',
+    component:BillComponent,
     canActivate:[afterLoginGuard]
   },
   {

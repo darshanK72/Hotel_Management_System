@@ -19,6 +19,7 @@ import { DepartmentsComponent } from './Components/departments/departments.compo
 import { GuestsComponent } from './Components/guests/guests.component';
 import { ReservationsComponent } from './Components/reservations/reservations.component';
 import { JwtInterceptor } from './Services/jwt.interceptor';
+import { BillComponent } from './Components/bill/bill.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { JwtInterceptor } from './Services/jwt.interceptor';
     UsersComponent,
     DepartmentsComponent,
     GuestsComponent,
-    ReservationsComponent
+    ReservationsComponent,
+    BillComponent
   ],
   imports: [
     BrowserModule,

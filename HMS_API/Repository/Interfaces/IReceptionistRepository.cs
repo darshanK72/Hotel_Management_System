@@ -20,7 +20,8 @@ namespace Hotel_Management_System.Repository.Interfaces
         Task<bool> DeleteRateAsync(int id);
         bool RateExists(int id);
 
-        Task<IEnumerable<ReservationResponsePayload>> GetReservationsAsync();
+        Task<IEnumerable<Reservation>> GetReservationsAsync();
+        Task<IEnumerable<BillPayload>> GetBills();
         Task<Reservation> GetReservationByIdAsync(int id);
         Task<Reservation> UpdateReservationAsync(int id, Reservation reservation);
         Task<bool> DeleteReservationAsync(int id);

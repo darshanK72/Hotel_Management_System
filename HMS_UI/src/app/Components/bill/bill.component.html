@@ -1,0 +1,69 @@
+<div class="container mt-4">
+    <!-- List of Bills -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <h4>Bills</h4>
+      </div>
+      <div class="card-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Billing Number</th>
+              <th>Stay Dates</th>
+              <th>Price</th>
+              <th>Taxes</th>
+              <th>Services</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let bill of bills; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ bill.billingNumber }}</td>
+              <td>{{ bill.stayDates }}</td>
+              <td>{{ bill.price | currency }}</td>
+              <td>{{ bill.taxes | currency }}</td>
+              <td>{{ bill.services }}</td>
+              <td>
+                <button class="btn btn-info me-2" *ngIf="bill.status != 'Paid'" (click)="onPay(bill)">Pay</button>
+                <button class="btn btn-success me-2" *ngIf="bill.status == 'Paid'">Paid</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <!-- Payment Form -->
+    <div *ngIf="selectedBill" class="card mb-4">
+      <div class="card-header">
+        <h4>Make Payment for Bill: {{ selectedBill.billingNumber }}</h4>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="paymentForm" (ngSubmit)="onSubmitPayment()">
+          <div class="form-group row my-2">
+            <label for="totalAmount" class="col-2 col-form-label">Total Amount</label>
+            <div class="col-10">
+              <input type="number" id="totalAmount" formControlName="totalAmount" class="form-control" [value]="selectedBill.price + selectedBill.taxes" readonly/>
+            </div>
+          </div>
+          <div class="form-group row my-2">
+            <label for="paymentTime" class="col-2 col-form-label">Payment Time</label>
+            <div class="col-10">
+              <input type="datetime-local" id="paymentTime" formControlName="paymentTime" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group row my-2">
+            <label for="creditCardDetails" class="col-2 col-form-label">Credit Card Details</label>
+            <div class="col-10">
+              <input type="text" id="creditCardDetails" formControlName="creditCardDetails" class="form-control" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success me-2" [disabled]="paymentForm.invalid">Submit Payment</button>
+          <button type="button" class="btn btn-secondary me-2" (click)="onCancel()">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

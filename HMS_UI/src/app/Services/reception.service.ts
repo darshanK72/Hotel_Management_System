@@ -40,6 +40,10 @@ export class ReceptionistService {
     return this.http.get<any[]>(`${this.apiUrl}/reservations`);
   }
 
+  getBills(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/bills`);
+  }
+
   getReservation(id: number): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/reservation/${id}`);
   }

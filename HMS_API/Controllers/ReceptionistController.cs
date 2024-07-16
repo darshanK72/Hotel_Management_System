@@ -95,9 +95,15 @@ namespace HMS_API.Controllers
         }
 
         [HttpGet("reservations")]
-        public async Task<ActionResult<IEnumerable<ReservationResponsePayload>>> GetReservations()
+        public async Task<ActionResult<IEnumerable<Reservation>>> GetReservations()
         {
             return Ok(await _receptionistRepository.GetReservationsAsync());
+        }
+
+        [HttpGet("bills")]
+        public async Task<ActionResult<IEnumerable<BillPayload>>> GetBills()
+        {
+            return Ok(await _receptionistRepository.GetBills());
         }
 
         [HttpGet("reservation/{id}")]

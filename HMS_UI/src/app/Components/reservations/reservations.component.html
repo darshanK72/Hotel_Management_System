@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<div class="container-fluid mt-4 px-3">
     <!-- Form Section -->
     <div class="card mb-4" *ngIf="showForm">
         <div class="card-header">
@@ -12,7 +12,7 @@
                     </div>
                     <div class="card-body">
                         <!-- Number of Adults -->
-                        <div class="form-group row">
+                        <div class="form-group row my-2">
                             <label for="numberOfAdults" class="col-sm-3 col-form-label">Number of Adults</label>
                             <div class="col-sm-9">
                                 <input type="number" id="numberOfAdults" formControlName="numberOfAdults"
@@ -25,7 +25,7 @@
                         </div>
 
                         <!-- Number of Children -->
-                        <div class="form-group row">
+                        <div class="form-group row my-2">
                             <label for="numberOfChildren" class="col-sm-3 col-form-label">Number of
                                 Children</label>
                             <div class="col-sm-9">
@@ -38,20 +38,8 @@
                             </div>
                         </div>
 
-                        <!-- Day -->
-                        <div class="form-group row">
-                            <label for="day" class="col-sm-3 col-form-label">Day</label>
-                            <div class="col-sm-9">
-                                <input type="text" id="day" formControlName="day" class="form-control" />
-                                <div *ngIf="reservationForm.get('day')!.invalid && reservationForm.get('day')!.touched"
-                                    class="text-danger">
-                                    Day is required and should be a maximum of 10 characters.
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- Check-In Date -->
-                        <div class="form-group row">
+                        <div class="form-group row my-2">
                             <label for="checkInDate" class="col-sm-3 col-form-label">Check-In Date</label>
                             <div class="col-sm-9">
                                 <input type="date" id="checkInDate" formControlName="checkInDate"
@@ -64,7 +52,7 @@
                         </div>
 
                         <!-- Check-Out Date -->
-                        <div class="form-group row">
+                        <div class="form-group row my-2">
                             <label for="checkOutDate" class="col-sm-3 col-form-label">Check-Out Date</label>
                             <div class="col-sm-9">
                                 <input type="date" id="checkOutDate" formControlName="checkOutDate"
@@ -76,33 +64,8 @@
                             </div>
                         </div>
 
-                        <!-- Number of Nights -->
-                        <div class="form-group row">
-                            <label for="numberOfNights" class="col-sm-3 col-form-label">Number of Nights</label>
-                            <div class="col-sm-9">
-                                <input type="number" id="numberOfNights" formControlName="numberOfNights"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('numberOfNights')!.invalid && reservationForm.get('numberOfNights')!.touched"
-                                    class="text-danger">
-                                    Number of Nights is required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Status -->
-                        <div class="form-group row">
-                            <label for="status" class="col-sm-3 col-form-label">Status</label>
-                            <div class="col-sm-9">
-                                <input type="text" id="status" formControlName="status" class="form-control" />
-                                <div *ngIf="reservationForm.get('status')!.invalid && reservationForm.get('status')!.touched"
-                                    class="text-danger">
-                                    Status is required and should be a maximum of 20 characters.
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- Room Selection -->
-                        <div class="form-group row">
+                        <div class="form-group row my-2">
                             <label for="roomId" class="col-sm-3 col-form-label">Room</label>
                             <div class="col-sm-9">
                                 <select id="roomId" formControlName="roomId" class="form-control">
@@ -112,182 +75,15 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Rate Section -->
-                <div class="card mb-3">
-                    <div class="card-header">
-                        <h5>Rate Information</h5>
-                    </div>
-                    <div class="card-body">
-                        <!-- Day -->
-                        <div class="form-group row">
-                            <label for="rateDay" class="col-sm-3 col-form-label">Day</label>
+                         <!-- Guest Selection -->
+                         <div class="form-group row my-2">
+                            <label for="guestId" class="col-sm-3 col-form-label">Guest</label>
                             <div class="col-sm-9">
-                                <input type="text" id="rateDay" formControlName="rate.day" class="form-control" />
-                                <div *ngIf="reservationForm.get('rate.day')!.invalid && reservationForm.get('rate.day')!.touched"
-                                    class="text-danger">
-                                    Day is required and should be a maximum of 10 characters.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Check-In Date -->
-                        <div class="form-group row">
-                            <label for="rateCheckInDate" class="col-sm-3 col-form-label">Check-In Date</label>
-                            <div class="col-sm-9">
-                                <input type="date" id="rateCheckInDate" formControlName="rate.checkInDate"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('rate.checkInDate')!.invalid && reservationForm.get('rate.checkInDate')!.touched"
-                                    class="text-danger">
-                                    Check-In Date is required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Check-Out Date -->
-                        <div class="form-group row">
-                            <label for="rateCheckOutDate" class="col-sm-3 col-form-label">Check-Out Date</label>
-                            <div class="col-sm-9">
-                                <input type="date" id="rateCheckOutDate" formControlName="rate.checkOutDate"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('rate.checkOutDate')!.invalid && reservationForm.get('rate.checkOutDate')!.touched"
-                                    class="text-danger">
-                                    Check-Out Date is required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Number of Guests -->
-                        <div class="form-group row">
-                            <label for="numberOfGuests" class="col-sm-3 col-form-label">Number of Guests</label>
-                            <div class="col-sm-9">
-                                <input type="number" id="numberOfGuests" formControlName="rate.numberOfGuests"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('rate.numberOfGuests')!.invalid && reservationForm.get('rate.numberOfGuests')!.touched"
-                                    class="text-danger">
-                                    Number of Guests is required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Per Night Charges -->
-                        <div class="form-group row">
-                            <label for="ratePerNightCharges" class="col-sm-3 col-form-label">Per Night
-                                Charges</label>
-                            <div class="col-sm-9">
-                                <input type="number" id="ratePerNightCharges" formControlName="rate.perNightCharges"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('rate.perNightCharges')!.invalid && reservationForm.get('rate.perNightCharges')!.touched"
-                                    class="text-danger">
-                                    Per Night Charges are required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Total Charges -->
-                        <div class="form-group row">
-                            <label for="rateTotalCharges" class="col-sm-3 col-form-label">Total Charges</label>
-                            <div class="col-sm-9">
-                                <input type="number" id="rateTotalCharges" formControlName="rate.totalCharges"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('rate.totalCharges')!.invalid && reservationForm.get('rate.totalCharges')!.touched"
-                                    class="text-danger">
-                                    Total Charges are required.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Payment Section -->
-                <div class="card mb-3">
-                    <div class="card-header">
-                        <h5>Payment Information</h5>
-                    </div>
-                    <div class="card-body">
-                        <!-- Payment Id -->
-                        <div class="form-group row">
-                            <label for="paymentId" class="col-sm-3 col-form-label">Payment ID</label>
-                            <div class="col-sm-9">
-                                <input type="text" id="paymentId" formControlName="payment.paymentId"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('payment.paymentId')!.invalid && reservationForm.get('payment.paymentId')!.touched"
-                                    class="text-danger">
-                                    Payment ID is required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Payment Amount -->
-                        <div class="form-group row">
-                            <label for="paymentAmount" class="col-sm-3 col-form-label">Payment Amount</label>
-                            <div class="col-sm-9">
-                                <input type="number" id="paymentAmount" formControlName="payment.paymentAmount"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('payment.paymentAmount')!.invalid && reservationForm.get('payment.paymentAmount')!.touched"
-                                    class="text-danger">
-                                    Payment Amount is required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Payment Date -->
-                        <div class="form-group row">
-                            <label for="paymentDate" class="col-sm-3 col-form-label">Payment Date</label>
-                            <div class="col-sm-9">
-                                <input type="date" id="paymentDate" formControlName="payment.paymentDate"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('payment.paymentDate')!.invalid && reservationForm.get('payment.paymentDate')!.touched"
-                                    class="text-danger">
-                                    Payment Date is required.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bill Section -->
-                <div class="card mb-3">
-                    <div class="card-header">
-                        <h5>Bill Information</h5>
-                    </div>
-                    <div class="card-body">
-                        <!-- Bill Id -->
-                        <div class="form-group row">
-                            <label for="billId" class="col-sm-3 col-form-label">Bill ID</label>
-                            <div class="col-sm-9">
-                                <input type="text" id="billId" formControlName="bill.billId" class="form-control" />
-                                <div *ngIf="reservationForm.get('bill.billId')!.invalid && reservationForm.get('bill.billId')!.touched"
-                                    class="text-danger">
-                                    Bill ID is required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Bill Amount -->
-                        <div class="form-group row">
-                            <label for="billAmount" class="col-sm-3 col-form-label">Bill Amount</label>
-                            <div class="col-sm-9">
-                                <input type="number" id="billAmount" formControlName="bill.billAmount"
-                                    class="form-control" />
-                                <div *ngIf="reservationForm.get('bill.billAmount')!.invalid && reservationForm.get('bill.billAmount')!.touched"
-                                    class="text-danger">
-                                    Bill Amount is required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Bill Date -->
-                        <div class="form-group row">
-                            <label for="billDate" class="col-sm-3 col-form-label">Bill Date</label>
-                            <div class="col-sm-9">
-                                <input type="date" id="billDate" formControlName="bill.billDate" class="form-control" />
-                                <div *ngIf="reservationForm.get('bill.billDate')!.invalid && reservationForm.get('bill.billDate')!.touched"
-                                    class="text-danger">
-                                    Bill Date is required.
-                                </div>
+                                <select id="guestId" formControlName="guestId" class="form-control">
+                                    <option *ngFor="let guest of guests" [value]="guest.guestId">{{guest.guestId}} - {{guest.name}} - {{guest.email}}
+                                    </option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -319,8 +115,7 @@
                         <th>Check-Out Date</th>
                         <th>Number of Nights</th>
                         <th>Status</th>
-                        <!-- Example: Include related columns like RoomId, RateId, PaymentId, BillId -->
-                        <!-- <th>Room</th> -->
+                        <th>Room</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -334,12 +129,12 @@
                         <td>{{ reservation.checkOutDate | date }}</td>
                         <td>{{ reservation.numberOfNights }}</td>
                         <td>{{ reservation.status }}</td>
-                        <!-- Example: Display related data like Room number -->
-                        <!-- <td>{{ reservation.room?.roomNumber }}</td> -->
+                        <td>{{ reservation.room?.roomNumber }}</td>
+                        <td></td>
                         <td>
                             <button class="btn btn-info me-2" (click)="onEdit(reservation)">Edit</button>
-                            <button class="btn btn-danger me-2"
-                                (click)="onDelete(reservation.reservationId)">Delete</button>
+                            <!-- <button class="btn btn-danger me-2"
+                                (click)="onDelete(reservation.reservationId)">Delete</button> -->
                         </td>
                     </tr>
                 </tbody>

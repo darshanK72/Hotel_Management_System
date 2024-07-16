@@ -27,6 +27,9 @@ namespace Hotel_Management_System.Repository.Implementation
                 query = query.Where(g => g.PhoneNumber.Contains(phoneNumber));
             if (!string.IsNullOrEmpty(memberCode))
                 query = query.Where(g => g.MemberCode.Contains(memberCode));
+
+
+
            
             return await query.Select(g => new GuestPayload
             {
@@ -36,7 +39,8 @@ namespace Hotel_Management_System.Repository.Implementation
                 Gender = g.Gender,
                 Address = g.Address,
                 PhoneNumber = g.PhoneNumber,
-                MemberCode = g.MemberCode
+                MemberCode = g.MemberCode,
+                ReservationId = g.ReservationId ?? 0
             }).ToListAsync();
         }
 
@@ -114,7 +118,7 @@ namespace Hotel_Management_System.Repository.Implementation
             return _context.Guests.Any(e => e.GuestId == id);
         }
 
-        public async Task<IEnumerable<ReservationResponsePayload>> GetReservationsAsync()
+        public async Task<IEnumerable<Reservation>> GetReservationsAsync()
         {
             var reservations =  await _context.Reservations
                 .Include(r => r.Room)
@@ -123,14 +127,50 @@ namespace Hotel_Management_System.Repository.Implementation
                 .Include(r => r.Bill)
                 .ToListAsync();
 
-            return reservations.Select(reservations => new ReservationResponsePayload
+            //return reservations.Select(reservations => new ReservationResponsePayload
+            //{
+            //    ReservationId = reservations.ReservationId,
+            //    Status = reservations.Status,
+            //    TotalAmount = reservations.Rate?.TotalCharges ?? 0,
+            //    BillId = reservations.BillId,
+            //    RoomId = reservations.RoomId
+            //});
+            return reservations;
+        }
+
+        public async Task<IEnumerable<BillPayload>> GetBills()
+        {
+            var bills = await _context.Bills
+                .Select(b => new BillPayload
+                {
+                    BillId = b.BillId,
+                    BillingNumber = b.BillingNumber,
+                    StayDates = b.StayDates,
+                    Price = b.Price,
+                    Taxes = b.Taxes,
+                    Services = b.Services
+                })
+                .ToListAsync();
+
+            foreach (var bill in bills)
             {
-                ReservationId = reservations.ReservationId,
-                Status = reservations.Status,
-                TotalAmount = reservations.Payment?.TotalAmount ?? 0,
-                BillId = reservations.BillId,
-                RoomId = reservations.RoomId
+                var reservation = _context.Reservations.Where(rev => rev.BillId == bill.BillId).FirstOrDefault();
+                bill.ReservationId = reservation.ReservationId;
+                bill.Status = reservation.Status;
+            }
+
+            var presentBills = bills.Where(b =>
+            {
+                var guest = _context.Guests.Where(g => g.ReservationId == b.ReservationId).FirstOrDefault();
+                return guest != null;
             });
+
+            foreach (var bill in presentBills)
+            {
+                var guest = _context.Guests.Where(g => g.ReservationId == bill.ReservationId).FirstOrDefault();
+                bill.GuestId = guest.GuestId;
+            }
+            return presentBills;
         }
 
         public async Task<Reservation> GetReservationByIdAsync(int id)
