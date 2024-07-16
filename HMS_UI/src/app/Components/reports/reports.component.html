@@ -1,0 +1,82 @@
+<div class="container mt-4" *ngIf="report">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4>Report Details</h4>
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <strong>Report Type:</strong> {{ report.reportType }}
+            </div>
+            <div class="mb-3">
+                <strong>Generated Date:</strong> {{ report.generatedDate | date: 'short' }}
+            </div>
+
+            <div *ngIf="report.reservationReport">
+                <h5>Reservation Report</h5>
+                <div class="mb-3">
+                    <strong>Month:</strong> {{ report.reservationReport.month }}
+                </div>
+                <div class="mb-3">
+                    <strong>Total Number of Reservations:</strong> {{ report.reservationReport.totalNumberOfReservations
+                    }}
+                </div>
+                <div class="mb-3">
+                    <strong>Total Income:</strong> {{ report.reservationReport.totalIncome | currency }}
+                </div>
+                <h6>Room Reservations</h6>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Room ID</th>
+                            <th>Room Type</th>
+                            <th>Room Number</th>
+                            <th>Number of Times Reserved</th>
+                            <th>Total Income From Room</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let reservation of report.reservationReport.roomReservations">
+                            <td>{{ reservation.roomId }}</td>
+                            <td>{{ reservation.roomType }}</td>
+                            <td>{{ reservation.roomNumber }}</td>
+                            <td>{{ reservation.numberOfTimeReserved }}</td>
+                            <td>{{ reservation.totalIncomeFromRoom | currency }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div *ngIf="report.staffReport">
+                <h5>Staff Report</h5>
+                <div class="mb-3">
+                    <strong>Month:</strong> {{ report.staffReport.month }}
+                </div>
+                <div class="mb-3">
+                    <strong>Total Number of Staff:</strong> {{ report.staffReport.totalNumberOfStaff }}
+                </div>
+                <div class="mb-3">
+                    <strong>Total Salary:</strong> {{ report.staffReport.totalSalary | currency }}
+                </div>
+                <h6>Staff Salaries</h6>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Staff ID</th>
+                            <th>Staff Name</th>
+                            <th>Salary</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let staff of report.staffReport.staffSalaries">
+                            <td>{{ staff.staffId }}</td>
+                            <td>{{ staff.staffName }}</td>
+                            <td>{{ staff.salary | currency }}</td>
+                            <td>{{ staff.department }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -5107,11 +5107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\.SDE\\06. Other DSA Repos\\HMS\\HMS_API\\Hotel_Management_System.csproj",
+      "projectUniqueName": "C:\\.SDE\\03. Projects\\HMS\\HMS_API\\Hotel_Management_System.csproj",
       "projectName": "Hotel_Management_System",
-      "projectPath": "C:\\.SDE\\06. Other DSA Repos\\HMS\\HMS_API\\Hotel_Management_System.csproj",
+      "projectPath": "C:\\.SDE\\03. Projects\\HMS\\HMS_API\\Hotel_Management_System.csproj",
       "packagesPath": "C:\\Users\\dakhairn\\.nuget\\packages\\",
-      "outputPath": "C:\\.SDE\\06. Other DSA Repos\\HMS\\HMS_API\\obj\\",
+      "outputPath": "C:\\.SDE\\03. Projects\\HMS\\HMS_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dakhairn\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -20,6 +20,7 @@ import { GuestsComponent } from './Components/guests/guests.component';
 import { ReservationsComponent } from './Components/reservations/reservations.component';
 import { JwtInterceptor } from './Services/jwt.interceptor';
 import { BillComponent } from './Components/bill/bill.component';
+import { ReportsComponent } from './Components/reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { BillComponent } from './Components/bill/bill.component';
     DepartmentsComponent,
     GuestsComponent,
     ReservationsComponent,
-    BillComponent
+    BillComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,7 @@ import { UsersComponent } from './Components/users/users.component';
 import { GuestsComponent } from './Components/guests/guests.component';
 import { ReservationsComponent } from './Components/reservations/reservations.component';
 import { BillComponent } from './Components/bill/bill.component';
+import { ReportsComponent } from './Components/reports/reports.component';
 
 const routes: Routes = [
   {
@@ -68,6 +69,11 @@ const routes: Routes = [
   {
     path:'bills',
     component:BillComponent,
+    canActivate:[afterLoginGuard]
+  },
+  {
+    path:'reports',
+    component:ReportsComponent,
     canActivate:[afterLoginGuard]
   },
   {
