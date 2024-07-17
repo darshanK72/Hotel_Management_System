@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.SDE\\03. Projects\\HMS\\HMS_API\\Hotel_Management_System.csproj": {}
+    "C:\\.SDE\\03. Projects\\11. Hotel Management System\\HMS_API\\Hotel_Management_System.csproj": {}
   },
   "projects": {
-    "C:\\.SDE\\03. Projects\\HMS\\HMS_API\\Hotel_Management_System.csproj": {
+    "C:\\.SDE\\03. Projects\\11. Hotel Management System\\HMS_API\\Hotel_Management_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.SDE\\03. Projects\\HMS\\HMS_API\\Hotel_Management_System.csproj",
+        "projectUniqueName": "C:\\.SDE\\03. Projects\\11. Hotel Management System\\HMS_API\\Hotel_Management_System.csproj",
         "projectName": "Hotel_Management_System",
-        "projectPath": "C:\\.SDE\\03. Projects\\HMS\\HMS_API\\Hotel_Management_System.csproj",
+        "projectPath": "C:\\.SDE\\03. Projects\\11. Hotel Management System\\HMS_API\\Hotel_Management_System.csproj",
         "packagesPath": "C:\\Users\\dakhairn\\.nuget\\packages\\",
-        "outputPath": "C:\\.SDE\\03. Projects\\HMS\\HMS_API\\obj\\",
+        "outputPath": "C:\\.SDE\\03. Projects\\11. Hotel Management System\\HMS_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dakhairn\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -112,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

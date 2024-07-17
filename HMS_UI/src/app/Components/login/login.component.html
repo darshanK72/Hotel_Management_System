@@ -5,6 +5,9 @@
           <div class="title">
             <h3 class="text-center pb-0 pt-4">Login</h3>
           </div>
+          <div>
+            <p class="text-center text-danger" *ngIf="serverError">Invalid Username or Password</p>
+          </div>
           <div class="card-body">
             <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
               <div class="mb-3">

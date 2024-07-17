@@ -17,7 +17,8 @@ export class ReservationsComponent implements OnInit {
   guests:Guest[] = [];
   submitType = 'Add';
   showForm = false;
-
+  isServerError = false;
+  errorMessage:any;
   constructor(
     private fb: FormBuilder,
     private receptionService: ReceptionistService
@@ -86,9 +87,13 @@ export class ReservationsComponent implements OnInit {
             // this.reservations.push(createdReservation);
             this.loadReservations();
             this.onCancel();
+            this.isServerError = false;
+            this.errorMessage = '';
           },
           (error) => {
-            window.alert('Error creating reservation: ' + error.message);
+            // window.alert('Error creating reservation: ' + error);
+            this.isServerError = true;
+            this.errorMessage = error.error;
           }
         );
       } else {
@@ -101,10 +106,14 @@ export class ReservationsComponent implements OnInit {
               // this.reservations[index] = reservation;
               this.loadReservations();
               this.onCancel();
+              this.isServerError = false;
+              this.errorMessage = '';
             }
           },
           (error) => {
-            window.alert('Error updating reservation: ' + error.message);
+            // window.alert('Error updating reservation: ' + error.message);
+            this.isServerError = true;
+            this.errorMessage = error.error;
           }
         );
       }
@@ -121,9 +130,13 @@ export class ReservationsComponent implements OnInit {
     this.receptionService.deleteReservation(reservationId).subscribe(
       () => {
         this.reservations = this.reservations.filter((r) => r.reservationId !== reservationId);
+        this.isServerError = false;
+        this.errorMessage = '';
       },
       (error) => {
-        window.alert('Error deleting reservation: ' + error.message);
+        this.isServerError = true;
+        this.errorMessage = error.error;
+        // window.alert('Error deleting reservation: ' + error.message);
       }
     );
   }
@@ -144,10 +157,15 @@ export class ReservationsComponent implements OnInit {
       (rooms: Room[]) => {
         this.rooms = rooms;
         console.log(this.rooms);
+        this.isServerError = false;
+        this.errorMessage = '';
       },
       (error) => {
         console.log(error);
-        window.alert('Error loading rooms: ' + error.message);
+        // window.alert('Error loading rooms: ' + error.message);
+        
+        this.isServerError = true;
+        this.errorMessage = error.error;
       }
     );
   }
@@ -157,10 +175,15 @@ export class ReservationsComponent implements OnInit {
       (guests: Guest[]) => {
         this.guests = guests;
         console.log(this.guests);
+        this.isServerError = false;
+        this.errorMessage = '';
       },
       (error) => {
         console.log(error);
-        window.alert('Error loading rooms: ' + error.message);
+        // window.alert('Error loading rooms: ' + error.message);
+        
+        this.isServerError = true;
+        this.errorMessage = error.error;
       }
     );
   }

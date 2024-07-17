@@ -10,6 +10,9 @@
                     <div class="card-header">
                         <h5>Reservation Information</h5>
                     </div>
+                    <div>
+                        <p class="text-center text-danger" *ngIf="isServerError">{{errorMessage}}</p>
+                    </div>  
                     <div class="card-body">
                         <!-- Number of Adults -->
                         <div class="form-group row my-2">
@@ -76,12 +79,13 @@
                             </div>
                         </div>
 
-                         <!-- Guest Selection -->
-                         <div class="form-group row my-2">
+                        <!-- Guest Selection -->
+                        <div class="form-group row my-2">
                             <label for="guestId" class="col-sm-3 col-form-label">Guest</label>
                             <div class="col-sm-9">
                                 <select id="guestId" formControlName="guestId" class="form-control">
-                                    <option *ngFor="let guest of guests" [value]="guest.guestId">{{guest.guestId}} - {{guest.name}} - {{guest.email}}
+                                    <option *ngFor="let guest of guests" [value]="guest.guestId">{{guest.guestId}} -
+                                        {{guest.name}} - {{guest.email}}
                                     </option>
                                 </select>
                             </div>

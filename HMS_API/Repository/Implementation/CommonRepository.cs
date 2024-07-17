@@ -49,6 +49,8 @@ namespace Hotel_Management_System.Repository.Implementation
             reservation.RateId = rate.RateId;
             reservation.Rate = rate;
 
+            room.Status = "Reserved";
+
             _context.Reservations.Add(reservation);
             await _context.SaveChangesAsync();
 

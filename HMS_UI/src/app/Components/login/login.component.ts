@@ -11,6 +11,7 @@ import { AuthService } from 'src/app/Services/auth.service';
 export class LoginComponent implements OnInit {
   
   loginForm: FormGroup;
+  serverError = false;
 
   constructor(private fb: FormBuilder, private authService: AuthService, private router: Router) {
     this.loginForm = this.fb.group({
@@ -33,7 +34,8 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['/home']); // Adjust '/home' to your actual route
         },
         error => {
-          console.error('Login failed', error); // Handle login error
+          // console.error('Login failed', error); // Handle login error
+          this.serverError = true;
         }
       );
     } else {
